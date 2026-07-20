@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { HeadContent, Outlet, Scripts, createRootRoute } from '@tanstack/react-router'
+import { SmoothScroll } from '../components/smooth-scroll'
 import appCss from '../app.css?url'
 
 export const Route = createRootRoute({
@@ -46,12 +47,12 @@ function RootComponent() {
 
 function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en" className="scroll-smooth bg-white">
+    <html lang="en" className="min-h-full scroll-smooth bg-white">
       <head>
         <HeadContent />
       </head>
-      <body className="m-0 bg-white antialiased">
-        {children}
+      <body className="m-0 min-h-full overflow-x-hidden bg-white antialiased">
+        <SmoothScroll>{children}</SmoothScroll>
         <Scripts />
       </body>
     </html>
