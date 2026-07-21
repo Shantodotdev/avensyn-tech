@@ -45,12 +45,17 @@ export function SiteFooter() {
           <div>
             <p className="text-sm text-[#8a7f83]">Contact</p>
             <a
-              href="mailto:hello@avensyn.tech?subject=Project%20discussion"
+              href="mailto:krshanto2005@gmail.com?subject=Project%20discussion"
               className="mt-5 block text-lg font-medium tracking-[-0.025em] text-[#2c2125] transition-colors duration-200 hover:text-[#6f1831]"
             >
-              hello@avensyn.tech
+              krshanto2005@gmail.com
             </a>
-            <p className="mt-3 text-base text-[#6d6266]">Bangladesh</p>
+            <a
+              href="tel:+8801311237037"
+              className="mt-3 block text-base text-[#6d6266] transition-colors duration-200 hover:text-[#6f1831]"
+            >
+              +8801311237037
+            </a>
           </div>
         </div>
 

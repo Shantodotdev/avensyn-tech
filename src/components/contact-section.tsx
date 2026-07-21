@@ -18,14 +18,14 @@ export function ContactSection() {
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/68">Tell us what you want to improve. We will ask the right questions and suggest a practical next step.</p>
           </div>
           <div className="flex flex-col gap-3 lg:items-stretch">
-            <a href="mailto:hello@avensyn.tech?subject=Project%20discussion" className="group flex items-center justify-between rounded-2xl bg-white px-5 py-4 text-[#6f1831] transition-transform duration-300 hover:-translate-y-1">
+            <a href="mailto:krshanto2005@gmail.com?subject=Project%20discussion" className="group flex items-center justify-between rounded-2xl bg-white px-5 py-4 text-[#6f1831] transition-transform duration-300 hover:-translate-y-1">
               <span className="flex items-center gap-3 font-medium">
                 <Mail className="size-5" strokeWidth={1.6} />
                 Email your project
               </span>
               <ArrowUpRight className="size-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-            <a href={`https://wa.me/?text=${whatsappMessage}`} className="group flex items-center justify-between rounded-2xl border border-white/25 px-5 py-4 text-white transition-colors duration-300 hover:bg-white/8">
+            <a href={`https://wa.me/8801311237037?text=${whatsappMessage}`} className="group flex items-center justify-between rounded-2xl border border-white/25 px-5 py-4 text-white transition-colors duration-300 hover:bg-white/8">
               <span className="flex items-center gap-3 font-medium">
                 <MessageCircle className="size-5" strokeWidth={1.6} />
                 Start on WhatsApp
