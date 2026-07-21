@@ -2,12 +2,11 @@ import { ArrowDownRight, ArrowUpRight } from 'lucide-react'
 import { motion, useReducedMotion } from 'motion/react'
 
 const clientLogos = [
-  'Northstar',
-  'Prime Motors',
-  'Greenfield',
-  'Atlas Group',
-  'Sundarban',
-  'Orion Works',
+  'Memorica',
+  'Prenda Solution',
+  'Star Elevator & Power Engineering',
+  'Bangladesh Wadokai Karate Do',
+  'GTD Media Production',
 ]
 
 function ClientLogoMarquee() {
