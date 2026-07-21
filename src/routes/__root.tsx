@@ -51,7 +51,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <head>
         <HeadContent />
       </head>
-      <body className="m-0 min-h-full overflow-x-hidden bg-white antialiased">
+      <body className="m-0 min-h-full overflow-x-clip bg-white antialiased">
         <SmoothScroll>{children}</SmoothScroll>
         <Scripts />
       </body>

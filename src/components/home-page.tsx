@@ -8,7 +8,7 @@ import { SiteHeader } from './site-header'
 
 export function HomePage() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-white font-['DM_Sans'] text-[#21191c] selection:bg-[#6f1831] selection:text-white">
+    <div className="min-h-screen overflow-x-clip bg-white font-['DM_Sans'] text-[#21191c] selection:bg-[#6f1831] selection:text-white">
       <SiteHeader />
       <main>
         <HeroSection />

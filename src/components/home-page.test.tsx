@@ -17,12 +17,19 @@ describe('HomePage', () => {
       screen.getAllByRole('link', { name: /discuss your project/i }).length,
     ).toBeGreaterThan(0)
     expect(screen.getByText(/websites that build trust/i)).toBeInTheDocument()
-    expect(screen.getByText(/software that removes busywork/i)).toBeInTheDocument()
+    expect(screen.getByText(/software that simplifies daily work/i)).toBeInTheDocument()
   })
 
   it('does not use the prohibited bold or uppercase utilities', () => {
     const { container } = render(<HomePage />)
 
     expect(container.innerHTML).not.toMatch(/font-bold|uppercase/)
+  })
+
+  it('clips horizontal overflow without creating a sticky-breaking scroll container', () => {
+    const { container } = render(<HomePage />)
+
+    expect(container.firstElementChild).toHaveClass('overflow-x-clip')
+    expect(container.firstElementChild).not.toHaveClass('overflow-x-hidden')
   })
 })
